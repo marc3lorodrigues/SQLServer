@@ -13,7 +13,7 @@ CREATE TABLE CLIENTE
 ```
 
 ## Coluna Identity
-O SQLServer possui uma característica a colunas do tipo inteiro que permite que seja gerado um valor automaticamente. A coluna não poderá receber valor.
+O SQLServer possui uma característica a colunas do tipo inteiro que permite que seja gerado um valor automaticamente. A coluna não poderá receber valor. Fortemente utilizado para definir chave primária.
 
 Exemplo:
 ```
