@@ -7,6 +7,10 @@ Em um sistema gerenciador de banco de dados baseado no modelo relacional as info
  * [Create Table](createtable.md) <br>
 
  
+ 
+## Manipulando Dados
+Visto que o repositório está definido poderá ser utilizado para armazenamento de dados e outras manipulações. Abaixo tempos alguns comandos de Manipulação de Dados.
+
 
 
 
