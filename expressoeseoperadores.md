@@ -83,3 +83,30 @@ Exemplo 2: Quando não for nulo.
 Nome is not null
 ```
 
+### Operadores matemáticos
+```
++ Soma
+Exemplo: SELECT 10 + 3
+```
+```
+- Subtração
+Exemplo: SELECT 10 - 3
+```
+```
+* Multiplicação
+Exemplo: SELECT 10 * 3
+```
+```
+/ Divisão
+Exemplo: SELECT 10 / 3
+```
+```
+% Resto da Divisão
+Exemplo: SELECT 10 % 3
+```
+
+
+
+
+
+
