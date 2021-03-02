@@ -10,7 +10,7 @@ Em um sistema gerenciador de banco de dados baseado no modelo relacional as info
  
 ## Manipulando Dados
 Visto que o repositório está definido poderá ser utilizado para armazenamento de dados e outras manipulações. Abaixo tempos alguns comandos de Manipulação de Dados.
-
+ * [Inserindo Dados](inserindodados.md) <br>
 
 
 
