@@ -1,39 +1,21 @@
-# Cláusula Where
-Cláusula do comando SELECT utilizado para determinar uma condição que será uma Expressão lógica. A Expressão poderá possuir operadores lógicos, de conjunto, Aritméticos, e relacionais. Será utilizada principalmente para determinar um filtro a consulta.
+# Cláusula Order By
+O ORDER BY da instrução SELECT indica que o resultado de uma instrução SELECT deve ser ordenado através das colunas no sentido informado. Sentido = direção da ordenação. Pode ser Ascendente e Descendente. Quando não informado o sentido o mesmo será ascendente. Também poderá ser informado o número da coluna na consulta.
 
-## Exemplo 1: Apenas os maiores de 2.
-SELECT *  
-  FROM PRODUTOS
- WHERE PRECO >2  
+## Exemplo 1: 
+```
+SELECT * 
+  FROM PRODUTOS ORDER BY CODIGO
+```
 
-## Exemplo 2: Apenas os maiores de 5.78.
-SELECT *  
-  FROM PRODUTOS
- WHERE PRECO >=5.78 
+## Exemplo 2: 
+```
+SELECT * 
+  FROM PRODUTOS 
+ ORDER BY SITUACAO, DESCRICAO DESC
+```
 
-## Exemplo 3: Exatamente os 3 itens.
-SELECT *  
-  FROM PRODUTOS
- WHERE CODIGO IN (4,2,9)  
-
-## Exemplo 4: Quando as 2 condições forem verdadeiras.
-SELECT *  
-  FROM PRODUTOS
- WHERE CODIGO BETWEEN 5 AND 8  
-   AND PRECO >=5.78  
-
-## Exemplo 5: Quando as 2 condições forem verdadeiras.
-SELECT *  
-  FROM PRODUTOS
- WHERE DESCRICAO LIKE 'A%'  
-   AND CODIGO IN (4,2,9)  
-
-## Exemplo 6: Quando a Descrição possui a letra a.
-SELECT *  
-  FROM PRODUTOS
- WHERE DESCRICAO LIKE '%A%'  
-
-## Exemplo 7: Quando a descrição termina com a.
-SELECT *  
-  FROM PRODUTOS
- WHERE DESCRICAO LIKE '%A' 
+## Exemplo 3: 
+```
+SELECT * 
+  FROM PRODUTOS ORDER BY 3,2
+```
