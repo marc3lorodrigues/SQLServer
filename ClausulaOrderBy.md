@@ -19,3 +19,5 @@ SELECT *
 SELECT * 
   FROM PRODUTOS ORDER BY 3,2
 ```
+
+#### Obs: Está cláusula deve ser utilizada com cuidado pois pode comprometer a performance da consulta.
