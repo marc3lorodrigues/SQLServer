@@ -9,6 +9,6 @@ SELECT TOP 5 *
 ## Exemplo 2:
 ```
 SELECT TOP 10 
-	  NOME, SALDO 
+       NOME, SALDO 
   FROM PRODUTOS
 ```
