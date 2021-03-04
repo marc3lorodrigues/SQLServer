@@ -5,8 +5,6 @@
 Em um sistema gerenciador de banco de dados baseado no modelo relacional as informações são armazenadas em estruturas chamadas Tabela. Uma tabela poderá possuir diversos recursos como: índices, gatilhos, constraints e etc. A seguir veremos o comando de definição de Tabela.
  * [Tipos de Dados](tipodedados.md) <br>
  * [Create Table](createtable.md) <br>
-
- 
  
 ## Manipulando Dados
 Visto que o repositório está definido poderá ser utilizado para armazenamento de dados e outras manipulações. Abaixo tempos alguns comandos de Manipulação de Dados.
@@ -16,11 +14,7 @@ Visto que o repositório está definido poderá ser utilizado para armazenamento
  * [Cláusula Where](ClausulaWhere.md) <br>
  * [Cláusula Order By](ClausulaOrderBy.md) <br>
  * [Cláusula Distinct](ClausulaDistinct.md) <br>
- * 
 
-
- 
- 
 
 
 
