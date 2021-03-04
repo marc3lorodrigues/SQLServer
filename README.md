@@ -15,6 +15,7 @@ Visto que o repositório está definido poderá ser utilizado para armazenamento
  * [Expressões e Operadores](expressoeseoperadores.md) <br>
  * [Cláusula Where](ClausulaWhere.md) <br>
  * [Cláusula Order By](ClausulaOrderBy.md) <br>
+ * [Cláusula Distinct](ClausulaDistinct.md) <br>
 
 
  
