@@ -14,6 +14,9 @@ Visto que o repositório está definido poderá ser utilizado para armazenamento
  * [Cláusula Where](ClausulaWhere.md) <br>
  * [Cláusula Order By](ClausulaOrderBy.md) <br>
  * [Cláusula Distinct](ClausulaDistinct.md) <br>
+ * [Cláusula Top](ClausulaTop.md) <br>
+
+
 
 
 
