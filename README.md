@@ -13,6 +13,8 @@ Visto que o repositório está definido poderá ser utilizado para armazenamento
  * [Inserindo Dados](inserindodados.md) <br>
  * [Selecionando Dados](selecionandodados.md) <br>
  * [Expressões e Operadores](expressoeseoperadores.md) <br>
+ * [Cláusula Order By](ClausulaOrderBy.md) <br>
+ 
  
 
 
