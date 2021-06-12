@@ -55,6 +55,12 @@ Caso haja alguma tentativa de manipulação de dados que contraria a regra será
 *	A coluna possuir poucos valores discretos, masculino ou feminino, por exemplo.
 
 Criando Indices
+ * [Criando Índice](criandoindice.md) <br>
+ * [Excluíndo Índice](excluindoindice.md) <br>
+ * [Forçando a utilização índice](forcandoindice.md) <br>
+ 
+
+
 
 
 
