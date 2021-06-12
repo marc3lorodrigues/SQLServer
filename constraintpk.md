@@ -1,4 +1,4 @@
-# Constraint de primary Key
+# Constraint de Primary Key
 Chave primária é um recurso utilizado em bancos relacionais onde a sua definição irá permitir que uma ou mais colunas que identifique uma linha da tabela. Outra função da PRIMARY KEY é ser o campo de referência em outra tabela a fim de manter integridade referencial.
 
 ## Características:
