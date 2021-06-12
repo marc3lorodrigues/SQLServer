@@ -15,7 +15,7 @@ Visto que o repositório está definido poderá ser utilizado para armazenamento
  * [Cláusula Order By](ClausulaOrderBy.md) <br>
  * [Cláusula Distinct](ClausulaDistinct.md) <br>
  * [Cláusula Top](ClausulaTop.md) <br>
- * [Alterando Dados](atualizandodados.md) <br>
+ * [Alterando Dados](AtualizandoDados.md) <br>
  * [Excluindo Dados](excluindodados.md) <br>
 
 
