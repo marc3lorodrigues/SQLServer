@@ -32,8 +32,6 @@ Caso haja alguma tentativa de manipulação de dados que contraria a regra será
  * [Constraint de Unique](constraintunique.md) <br>
  * [Constraint de Primary Key](constraintpk.md) <br>
  * [Constraint de Foreign Key](constraintfk.md) <br>
- * 
-
 
 
 
