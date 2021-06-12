@@ -27,7 +27,7 @@ ALTER TABLE MODELO
      ADD CONSTRAINT FK_MODELO_MARCA FOREIGN KEY (MARCA_ID) 
              REFERENCES MARCA (ID) 
 ```
-## Ações de Restrição
+## Ações de Restrição:
 * São ações que podem ser definidas para fornecer uma alternativa a restrição. São executadas automaticamente na tabela Child, de acordo com um evento ocorrido na tabela Parent relacionada.
 
 * São elas:
