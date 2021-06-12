@@ -30,7 +30,9 @@ OBS:
 Caso haja alguma tentativa de manipulação de dados que contraria a regra será cancelada e o banco lançará um erro. Caso haja a tentativa de criação de uma regra que já esteja invalidada por uma informação gravada a regra será cancelada e o banco lançará um erro.
  * [Constraint de Check](constraintcheck.md) <br>
  * [Constraint de Unique](constraintunique.md) <br>
- * [Constraint de Primary Key](constraintPK.md) <br>
+ * [Constraint de Primary Key](constraintpk.md) <br>
+ * [Constraint de Foreign Key](constraintfk.md) <br>
+ * 
 
 
 
