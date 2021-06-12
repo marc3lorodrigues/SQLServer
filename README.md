@@ -57,7 +57,7 @@ Caso haja alguma tentativa de manipulação de dados que contraria a regra será
 Criando Indices
  * [Criando Índice](criandoindice.md) <br>
  * [Excluíndo Índice](excluindoindice.md) <br>
- * [Forçando a utilização índice](forcandoindice.md) <br>
+ * [Forçando a utilização índice](forcandoutilizacao.md) <br>
  
 
 
