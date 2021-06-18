@@ -33,17 +33,17 @@ SELECT *
        LEFT OUTER JOIN MODELO ON 
 MARCA.MARCA_ID = MODELO.MARCA_ID 
 ```
-### Right
+#### Right
 Considera a tabela da direita, ou seja, considerará todos os registros da tabela da direita mesmo que a mesma não possua registros de referência na tabela da esquerda. 
 
-#### Exemplo 1:
+##### Exemplo 1:
 ```
 SELECT *  
   FROM MARCA  
        RIGHT OUTER JOIN MODELO ON
 MARCA.MARCA_ID = MODELO.MARCA_ID 
 ```
-### Full
+#### Full
 Considerará todos os registros das duas tabelas, ou seja, considera todos os registros que possuem relação e os que não possuem relação.
 
 #### Exemplo 1:
