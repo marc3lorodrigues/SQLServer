@@ -23,7 +23,7 @@ SELECT *
 ### Outer Join
 Permite trazer um conjunto de dados de tabelas onde os campos estão relacionados através de igualdade. O comando não impõe obrigatoriedade, ou seja, trará registros onde os valores de comparação são iguais nas duas tabelas da relação, e os registros onde os valores de comparação não são iguais nas duas tabelas da relação. A cláusula OUTER JOIN possui os tipos: Left, Right e Full.
 
-### Left
+#### Left
 Considera a tabela da esquerda, ou seja, considerará todos os registros da tabela da esquerda mesmo que a mesma não possua registros de referência na tabela da direita.
 
 #### Exemplo 1: 
