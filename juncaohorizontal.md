@@ -1,5 +1,5 @@
 # Junção Horizontal
-Junções Horizontais em que o registro de uma tabela e de outra se complementam, tornando-se um só registro com a quantidade somada de suas colunas, tais como: Cross Join, Inner Join e Outer Join. Para execução dos códigos abaixo execute o script do arquivo
+Junções Horizontais em que o registro de uma tabela e de outra se complementam, tornando-se um só registro com a quantidade somada de suas colunas, tais como: Cross Join, Inner Join e Outer Join. Para execução dos códigos abaixo execute o script do arquivo [script](https://github.com/marc3lorodrigues/SQLServer/blob/main/Script_MarcaModelo.txt).
 
 ### Cross Join
 O comando irá trazer todos os registros. Irá listar pra cada registro da tabela da esquerda todos os registros da tabela da direita, formando um produto cartesiano. 
