@@ -59,6 +59,15 @@ Criando Indices
  * [Excluíndo Índice](excluindoindice.md) <br>
  * [Forçando a utilização índice](forcandoutilizacao.md) <br>
  
+## Consultas Avançadas
+São consultas que tem o objetivo de trazer as informações de forma mais elaborada. Pode ser feito junção de dados, Agrupamentos, Cálculos e outros.
+
+### Junção de Dados
+Juntar tabelas significa considerar registros de mais de uma tabela que tenham ou não os mesmos valores em colunas consideradas chaves ou algo equivalente.
+Para isso pode-se realizar:
+-	Junções Verticais.
+- Junções Horizontais.
+
 
 
 
