@@ -93,7 +93,7 @@ São funções que podem ser utilizadas juntamente como o group by e produzir al
  * [SUM](sum.md) <br>
  * [MAX](max.md) <br>
  * [MIN](min.md) <br>
- * [MIN](count.md) <br>
+ * [COUNT](count.md) <br>
 
     
 
