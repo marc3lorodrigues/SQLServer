@@ -80,12 +80,7 @@ SELECT DESCRICAO
 FROM PRODUTO
 GROUP BY DESCRICAO
 ```
-#### Exemplo 2: 
-```
-SELECT DESCRICAO
-FROM PRODUTO
-GROUP BY DESCRICAO
-```
+
 
 #### Funções de Agregação
 São funções que podem ser utilizadas juntamente como o group by e produzir algum tipo de cálculo. Vejamos:
