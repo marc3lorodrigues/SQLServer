@@ -8,7 +8,7 @@
 ## [Índices](indices.md)
 ## [Junção de Dados](juncaodados.md)
 ## [Agrupamento de Dados](Agrupamentodados.md)
-## [Views](view.md)
+
 
 
     
