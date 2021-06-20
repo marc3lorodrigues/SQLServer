@@ -1,4 +1,4 @@
-### Agrupamento de Dados e funções de Agregação
+# Agrupamento de Dados e funções de Agregação
 A Cláusula group by do comando SELECT é utilizado para agrupar dados resultantes da consulta. Serão agrupados os valores iguais de uma determinada coluna. A coluna a ser agrupada deverá estar presente na lista de colunas a serem exibidas ou uma função de agregação deverá ser exibida.
 
 #### Exemplo 1: 
