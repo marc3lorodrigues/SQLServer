@@ -22,5 +22,5 @@ Elimina o cursor da memória.
 @@FETCH_STATUS
 É uma função de cursor que armazena 0(zero) caso o último comando tenha sido executado com sucesso, e -1 caso não tenha mais linhas.
 
-Considere o [Script](https://github.com/marc3lorodrigues/SQLServer/blob/main/script_cursor.sql) para os estudos de caso [1](ec_cursor1.md) e [2](ec_cursor2.md)
+Considere o [Script](https://github.com/marc3lorodrigues/SQLServer/blob/main/script_cursor.sql) para os estudos de caso [1](ec_cursor1.md) e [2](ec_cursor2.md).
 
