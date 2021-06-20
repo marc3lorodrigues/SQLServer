@@ -8,6 +8,5 @@ A linguagem T-SQL estende a linguagem SQL e é comumente usado para escrever as 
 - [Estrutura de Repetição](estruturarepeticaotsql.md)
 - [Cursores](cursores.md)
 - [Procedures](procedures.md)
-- [Functions](function.md)
-- [Triggers](triggers.md)
+
  
