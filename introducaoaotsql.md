@@ -4,10 +4,10 @@ A linguagem T-SQL estende a linguagem SQL e é comumente usado para escrever as 
 - [Variáveis](variaveis.md)
 - [Bloco Anônimo](blocoanonimo.md)
 - [Funções de Manipulação de Dados](funcaomanipulacaodados.md)
-- [Estrutura de Decisão](estruturadecisao.md)
-- [Estrutura de Repetição](estruturarepeticao)
+- [Estrutura de Decisão](estruturadecisaotsql.md)
+- [Estrutura de Repetição](estruturarepeticaotsql.md)
 - [Cursores](cursores.md)
 - [Procedures](procedures.md)
-- [Functions](functions.md)
+- [Functions](function.md)
 - [Triggers](triggers.md)
  
