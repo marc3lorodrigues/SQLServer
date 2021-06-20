@@ -11,9 +11,10 @@
 - [Junção de Dados](juncaodados.md)
 - [Agrupamento de Dados](Agrupamentodados.md)
 - [Controle Transacional](controletransacional.md)
+- [Introdução à Liguagem T-SQL](introducaoaotsql.md)
 
 
-## DBA
+
 
 
     
