@@ -1,3 +1,6 @@
+# Estudo de Caso 1:
+Percorre todos os telefones da tabela fazendo atualização do telefone com o digito 9 a mais.
+
 ```
 DECLARE @TEL VARCHAR(10)
 DECLARE @ID INTEGER
