@@ -90,6 +90,11 @@ São funções que podem ser utilizadas juntamente como o group by e produzir al
  * [MIN](min.md) <br>
  * [COUNT](count.md) <br>
 
+
+### Junção de Dados
+* [Views](view.md)
+
+
     
 
 
