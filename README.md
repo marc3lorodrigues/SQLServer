@@ -7,17 +7,8 @@
 ## [Constraints](constraints.md)
 ## [Índices](indices.md)
 ## [Junção de Dados](juncaodados.md)
-## [Agrupamento de Dados](agrupamentodados.md)
-
-
-
-
-
-
-
-
-### Junção de Dados
-* [Views](view.md)
+## [Agrupamento de Dados](Agrupamentodados.md)
+## [Views](view.md)
 
 
     
