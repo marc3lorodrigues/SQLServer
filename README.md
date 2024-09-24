@@ -3,15 +3,15 @@
 
 ## Developer
 
-- [Definindo Estrutura de Dados](files/definindoestruturadados.md)
-- [Manipulando Dados](files/manipulandodados.md)
-- [Alterando Estrutura de Armazenamento de Dados](files/alterandoestruturadearmazenamentodados.md)
-- [Constraints](files/constraints.md)
-- [Índices](files/indices.md)
-- [Junção de Dados](files/juncaodados.md)
-- [Agrupamento de Dados](files/Agrupamentodados.md)
-- [Controle Transacional](files/controletransacional.md)
-- [Introdução à Liguagem T-SQL](files/introducaoaotsql.md)
+- [Definindo Estrutura de Dados](Files/definindoestruturadados.md)
+- [Manipulando Dados](Files/manipulandodados.md)
+- [Alterando Estrutura de Armazenamento de Dados](Files/alterandoestruturadearmazenamentodados.md)
+- [Constraints](Files/constraints.md)
+- [Índices](Files/indices.md)
+- [Junção de Dados](Files/juncaodados.md)
+- [Agrupamento de Dados](Files/Agrupamentodados.md)
+- [Controle Transacional](Files/controletransacional.md)
+- [Introdução à Liguagem T-SQL](Files/introducaoaotsql.md)
 
 
 
