@@ -344,7 +344,7 @@ select *
   FROM PRODUTOS ORDER BY 3,2
 ~~~
 
-#### Cláusula Distinct
+#### DISTINCT
 Cláusula do comando SELECT utilizada distinguir os valores uns dos outros, fazendo assim a exibição de um valor uma única vez. Devemos observar que ele considera para a distinção os valores exibidos pelas colunas do select.
 
 Exemplo 1: O exemplo irá trazer apenas uma ocorrência de cada valor da coluna.
@@ -359,7 +359,7 @@ SELECT DISTINCT SITUACAO, SALDO
   FROM PRODUTOS
 ~~~
 
-####Cláusula Top
+#### TOP
 Limita o número de registros de uma instrução select.
 
 Exemplo 1:
