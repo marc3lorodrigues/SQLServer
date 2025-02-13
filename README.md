@@ -400,7 +400,7 @@ UPDATE PRODUTOS
 ~~~
 
 
-####Delete
+#### Delete
 O DELETE é um comando DML (Data Manipulation Language) utilizado para executar exclusão de dados em uma tabela. Deve-se ter cuidado pois quando não utilizado a cláusula WHERE todos os registros serão excluídos.
 
 Exemplo 1: 
