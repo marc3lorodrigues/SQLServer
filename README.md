@@ -276,29 +276,29 @@ Cláusula do comando SELECT utilizado para determinar uma condição que será u
 Exemplo 1: Apenas os maiores de 2.
 ~~~sql
 SELECT *  
-  FROM PRODUTOs
+  FROM PRODUTOS
  WHERE PRECO >2  
 ~~~
 
 Exemplo 2: Apenas os maiores de 5.78.
 ~~~sql
 SELECT *  
-  FROM produtos
+  FROM PRODUTOS
  WHERE PRECO >=5.78 
 ~~~
 
 Exemplo 3: Exatamente os 3 itens.
 ~~~sql
 SELECT *  
-  FROM produtos
- WHERE codigo in (4,2,9)  
+  FROM PRODUTOS
+ WHERE CODIGO IN (4,2,9)  
 ~~~
 
 Exemplo 4: Quando as 2 condições forem verdadeiras.
 ~~~sql
 SELECT *  
-  FROM produtos
- WHERE codigo between 5 and 8  
+  FROM PRODUTOS
+ WHERE CODIGO BETWEEN 5 AND 8  
    AND PRECO >=5.78  
 ~~~
 
@@ -307,7 +307,7 @@ Exemplo 5: Quando as 2 condições forem verdadeiras.
 SELECT *  
   FROM PRODUTOS
  WHERE DESCRICAO LIKE 'A%'  
-   and codigo in (4,2,9)  
+   AND CODIGO IN (4,2,9)  
 ~~~
 
 Exemplo 6: Quando a Descrição possui a letra a.
@@ -329,19 +329,19 @@ O ORDER BY da instrução SELECT indica que o resultado de uma instrução SELEC
 
 Exemplo 1: 
 ~~~sql
-select * 
-  from produtos order by codigo
+SELECT * 
+  FROM PRODUTOS ORDER BY CODIGO
 ~~~
 Exemplo 2: 
 ~~~sql
-select * 
-  from produtos 
- order by situacao, descricao desc
+SELECT * 
+  FROM PRODUTOS 
+ ORDER BY SITUACAO, DESCRICAO DESC
 ~~~
 Exemplo 3: 
 ~~~sql
 select * 
-  from produtos order by 3,2
+  FROM PRODUTOS ORDER BY 3,2
 ~~~
 
 #### Cláusula Distinct
@@ -349,14 +349,14 @@ Cláusula do comando SELECT utilizada distinguir os valores uns dos outros, faze
 
 Exemplo 1: O exemplo irá trazer apenas uma ocorrência de cada valor da coluna.
 ~~~sql
-Select distinct situacao 
-  from produtos
+SELECT DISTINCT SITUACAO 
+  FROM PRODUTOS
 ~~~
 
 Exemplo 2: O exemplo irá trazer apenas uma ocorrência de cada par de valores das respectivas colunas.
 ~~~sql
-Select distinct situacao, saldo
-  from produtos
+SELECT DISTINCT SITUACAO, SALDO
+  FROM PRODUTOS
 ~~~
 
 ####Cláusula Top
@@ -370,9 +370,9 @@ SELECT TOP 5 *
 
 Exemplo 2:
 ~~~sql
-Select top 10 
-  nome, saldo 
-  from produtos
+SELECT TOP 10 
+  NOME, SALDO 
+  FROM PRODUTOS
 ~~~
 
 #### Update
@@ -387,7 +387,7 @@ UPDATE PRODUTOS
 
 Exemplo 2:
 ~~~sql
-UPDATE pRODUTOs 
+UPDATE PRODUTOS 
    SET SALDO = 10,  
        PRECO = PRECO * 1.1  
  WHERE SITUACAO='I'  
@@ -395,8 +395,8 @@ UPDATE pRODUTOs 
 
 Exemplo 3:
 ~~~sql
-UPDATE pRODUTOs
-   SET situacao='A'  
+UPDATE PRODUTOS
+   SET SITUACAO='A'  
 ~~~
 
 
@@ -405,26 +405,26 @@ O DELETE é um comando DML (Data Manipulation Language) utilizado para executar 
 
 Exemplo 1: 
 ~~~sql
-DELETE PRODUTOs
+DELETE PRODUTOS
  WHERE SITUACAO='A'  
 ~~~
 Exemplo 2: 
 ~~~sql
-DELETE PRODUTOs
+DELETE PRODUTOS
  WHERE SITUACAO='A'  
    AND PRECO >3  
 ~~~
 
 Exemplo 3: 
 ~~~sql
-DELETE PRODUTOs
+DELETE PRODUTOS
  WHERE SITUACAO='A'  
     OR DESCRICAO NOT LIKE '%E%' 
 ~~~
 
 Exemplo 4: 
 ~~~sql
-DELETE PRODUTOs
+DELETE PRODUTOS
 ~~~
 
 
