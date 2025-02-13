@@ -1,5 +1,5 @@
 # SQLServer
-Repositório destinado a conteúdos e Scripts de SQLSERVER.
+Repositório destinado a conteúdos e Scripts de SQLServer.
 
 ## Introdução a Linguagem TSQL
 A linguagem Transaction SQL é uma extensão da linguagem SQL e é de propriedade da Microsoft para acesso ao banco SQLServer e outros que o suportam. 
