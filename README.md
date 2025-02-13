@@ -270,7 +270,7 @@ Exemplo 2: Quando não for nulo.
 Nome is not null
 ~~~
 
-#### Cláusula Where
+#### WHERE 
 Cláusula do comando SELECT utilizado para determinar uma condição que será uma Expressão lógica. A Expressão poderá possuir operadores lógicos, de conjunto, Aritméticos, e relacionais. Será utilizada principalmente para determinar um filtro a consulta.
 
 Exemplo 1: Apenas os maiores de 2.
@@ -324,7 +324,7 @@ SELECT *  
  WHERE DESCRICAO LIKE '%A'  
 ~~~
 
-#### Cláusula Order By
+#### ORDER BY
 O ORDER BY da instrução SELECT indica que o resultado de uma instrução SELECT deve ser ordenado através das colunas no sentido informado. Sentido = direção da ordenação. Pode ser Ascendente e Descendente. Quando não informado o sentido o mesmo será ascendente. Também poderá ser informado o número da coluna na consulta.
 
 Exemplo 1: 
@@ -375,7 +375,7 @@ SELECT TOP 10
   FROM PRODUTOS
 ~~~
 
-#### Update
+#### UPDATE
 O UPDATE é um comando DML (Data Manipulation Language) utilizado para executar alteração de dados em uma tabela. Os campos a serem alterados deverão ser especificados pela cláusula SET. Deve-se ter cuidado pois quando não utilizado a cláusula where todos os registros serão atualizados.
 
 Exemplo 1: 
@@ -400,7 +400,7 @@ UPDATE PRODUTOS
 ~~~
 
 
-#### Delete
+#### DELETE 
 O DELETE é um comando DML (Data Manipulation Language) utilizado para executar exclusão de dados em uma tabela. Deve-se ter cuidado pois quando não utilizado a cláusula WHERE todos os registros serão excluídos.
 
 Exemplo 1: 
