@@ -427,7 +427,209 @@ Exemplo 4:
 DELETE PRODUTOS
 ~~~
 
+### Definindo Constraints
+São restrições implementadas através de regras. Essas regras serão impostas aos comandos: INSERT, UPDATE, DELETE. As regras podem ser definidas na criação da tabela, através do comando CREATE TABLE, ou na alteração da tabela, através do comando ALTER TABLE. Caso a tabela já tenha o valor que está sendo restringido pela constraint, a constraint não será criada. Os tipos de constraints são: check, unique, primary key e foreign key.
 
+OBS:
+Caso haja alguma tentativa de manipulação de dados que contraria a regra será cancelada e o banco lançará um erro. Caso haja a tentativa de criação de uma regra que já esteja invalidada por uma informação gravada a regra será cancelada e o banco lançará um erro.
+
+#### Constraint de Check
+Define que a coluna da tabela possui uma condição a ser respeitada. A condição é criada segundo uma expressão lógica. Tanto para inserir como para atualizar dados de uma tabela deverá ser respeitada a condição.
+
+Exemplo 1: Na construção da tabela.
+
+~~~sql
+CREATE TABLE VEICULO
+(
+	PLACA CHAR(7) NOT NULL,
+	MARCA VARCHAR(30),
+	MODELO VARCHAR(30),
+	ANOFABRICACAO INTEGER,
+	ANOMODELO INTEGER,
+	CONSTRAINT CHK_MARCA CHECK(MARCA IN('FIAT','VW')),
+	CONSTRAINT CHK_ANOMODELO CHECK(ANOMODELO<> 2013)
+)
+~~~
+
+Exemplo 2: Na Alteração.
+~~~sql
+ALTER TABLE VEICULO
+ADD CONSTRAINT CHK_MARCA CHECK(VEI_MARCA IN('FIAT','VW'))
+
+ALTER TABLE VEICULO
+  ADD CONSTRAINT CHK_ANOMODELO CHECK(ANOMODELO<>2014)
+~~~
+
+#### Constraint de Unique
+Define que a coluna da tabela é única, não podendo possuir valores repetidos. OBS: um valor da coluna poderá ser nulo NULL.
+Exemplo 1: Na criação da Tabela.
+
+~~~sql
+CREATE TABLE VEICULO
+(
+PLACA CHAR(7),
+MARCA VARCHAR(30),
+MODELO VARCHAR(30),
+ANOMODELO INTEGER,
+CONSTRAINT UNQ_PLACA UNIQUE (PLACA)
+)
+~~~
+
+Exemplo 2: Na alteração da tabela.
+~~~sql
+ALTER TABLE VEICULO
+ADD CONSTRAINT UNQ_PLACA UNIQUE (PLACA)
+~~~
+
+#### Constraint de primary Key
+Chave primária é um recurso utilizado em bancos relacionais onde a sua definição irá permitir que uma ou mais colunas que identifique uma linha da tabela. Outra função da PRIMARY KEY é ser o campo de referência em outra tabela a fim de manter integridade referencial.
+*	Características:
+*	 Não Pode ser Nulo.
+*	Identificará a linha.
+*	Terá um índice definido.
+*	Poderá ser referenciada em outra tabela a fim de definir integridade referencial.
+*	Pode ser simples (Possui um único campo) ou composta (possui dois ou mais campos).
+*	Se a chave primária é composta, os valores de cada campo podem se repetir, mas não a combinação desses valores.
+*	Toda chave primária irá criar um objeto chamado Constraint.
+
+Exemplo 1: Na criação da tabela
+~~~sql
+Create table marca
+(
+ID INT NOT null,
+descricao varchar(50)
+constraint pk_Marca primary key (id)
+)
+~~~
+
+Exemplo 2: Na criação da tabela
+~~~sql
+ALTER table marca
+ADD constraint pk_Marca primary key (id)
+~~~
+
+#### Constraint de Foreign key
+Chave Estrangeira é um recurso utilizado em bancos relacionais onde a sua definição irá permitir que a tabela corrente tenha uma relação com outra tabela. A relação é imposta através de campos contidos nas duas tabelas.
+
+Características:
+*	O campo de referência da tabela atual deverá ser chave primária na outra tabela.
+*	As colunas de relação necessariamente precisam ser do mesmo tipo.
+*	Uma chave estrangeira poderá compor uma chave primária.
+*	Nem toda chave estrangeira será uma chave primária.
+*	Pode ter o valor nulo.
+*	Toda chave estrangeira irá criar um objeto chamado Constraint.
+
+Exemplo 1: Na criação da tabela:
+~~~sql
+CREATE TABLE MODELO  
+(  
+     ID INT NOT NULL,  
+     DESCRICAO VARCHAR(30),  
+     MARCA_ID INT ,  
+     CONSTRAINT PK_MODELO PRIMARY KEY (ID),  
+     CONSTRAINT FK_MODELO_MARCA FOREIGN KEY (MARCA_ID)  
+        REFERENCES MARCA (ID)  
+) 
+~~~
+Exemplo 2: Na criação da tabela
+
+~~~sql
+ALTER TABLE MODELO
+     ADD CONSTRAINT FK_MODELO_MARCA FOREIGN KEY (MARCA_ID) 
+             REFERENCES MARCA (ID) 
+~~~
+Ações de Restrição
+*	São ações que podem ser definidas para fornecer uma alternativa a restrição. São executadas automaticamente na tabela Child, de acordo com um evento ocorrido na tabela Parent relacionada.
+
+São elas:
+Cascade: Executa a mesma ação nos registros da tabela Child relacionada.
+Set Null: Altera para null, o valor da(s) coluna(s) da chave estrangeira dos registros da tabela Child relacionada. 
+
+Eventos:
+*	Delete: Ao excluir um registro da tabela Parent.
+*	Update: Ao alterar os valores da chave primária de um registro da tabela Parent.
+
+Exemplo 1:Na criação da Tabela
+*	Tabela Parent:
+~~~sql
+CREATE TABLE MARCA  
+(  
+     ID INT NOT NULL,  
+     DESCRICAO VARCHAR(30),  
+     CONSTRAINT PK_MARCA PRIMARY KEY (ID)
+)  	
+~~~
+*	Tabela Child:
+~~~sql
+CREATE TABLE MODELO  
+(  
+     ID INT NOT NULL,  
+     DESCRICAO VARCHAR(30),  
+     MARCA_ID INT,  
+     CONSTRAINT PK_MODELO PRIMARY KEY (ID),  
+     CONSTRAINT FK_MODELO_MARCA FOREIGN KEY (MARCA_ID)  
+        REFERENCES MARCA (ID) ON UPDATE SET NULL ON DELETE CASCADE
+)  
+~~~
+
+#### Excluindo Constraint
+O comando Drop Constraint pode ser utilizada para apagar constraints de unique, check, primary key e foreign key. Para apagar uma primary key a mesma não pode possuir dependência em uma foreign key .
+
+Exemplo 1: Apagando uma constraint de primary key. 
+~~~sql
+ALTER TABLE CLIENTE  
+	DROP CONSTRAINT PK_CLIENTE
+~~~
+Exemplo 2: Apagando uma constraint de check
+~~~sql
+ALTER TABLE VEICULO
+	DROP CONSTRAINT CHK_VEI_ANOMODELO
+~~~
+
+### Índices
+Índices são estruturas que possibilitam uma forma mais rápida e eficiente de acessar os dados de uma tabela. Ocupam espaço físico para manter informações que serão utilizados para acessar os dados da tabela. As informações são formadas pelas colunas que serão utilizadas para formar o índice, bem como classificar a coluna da tabela.
+
+**Características:**
+*	Aumentam a velocidade de:
+*	Recuperação de dados.
+*	Ordenação dos registros.
+*	Funciona de maneira semelhante ao índice de um livro.
+*	Antes da execução de uma instrução Select, o gerenciador sempre verifica a existência de índices.
+
+**Necessidade de índices:**
+*	Motivos para se criar índices:
+*	Os dados solicitados são solicitados ordenados com frequência.
+*	Motivos para NÃO se criar índices:
+*	As colunas já fazem parte de índices.
+*	Dificilmente as colunas aparecerão na cláusula WHERE do SELECT.
+*	As colunas têm alterações frequentes.
+*	A coluna possuir poucos valores discretos, Masculino ou Feminino, por exemplo.
+
+O comando para criar um Índice pode-se utilizar um comando DDL, o Create Index. 
+
+Exemplo 1: Criando índice com 1 campo.
+~~~sql
+CREATE INDEX IX_PRODUTO_DESCRICAO ON PRODUTO (DESCRICAO)
+~~~
+Exemplo 2: Criando índice com 2 campo.
+~~~sql
+CREATE INDEX IX_PRODUTO_DESCRICAO ON PRODUTO (DESCRICAO, GRUPO)
+~~~
+### Excluindo índice
+Para exclui um Índice pode-se utilizar um comando DDL, o Drop Index. 
+
+Exemplo:
+~~~sql
+DROP INDEX IX_CLIENTE1 ON CLIENTE
+~~~
+Forçando a utilização do Índice
+Para forçar a utilização do índice basta o referenciar no nome da tabela. Veja o exemplo abaixo.
+
+Exemplo 1: 
+~~~sql
+SELECT vei_placa
+FROM VEICULO WITH(INDEX = index1 )
+~~~
 
 
 
