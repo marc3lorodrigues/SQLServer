@@ -1020,7 +1020,6 @@ SELECT *
 ### Visões
 É uma estrutura que armazena uma instrução Select e simula outra tabela a partir do conjunto de registros resultante dessa instrução. Tem seu funcionamento semelhante a uma tabela, mas não é uma. Permite fornecer subconjuntos e super-conjuntos de dados de uma ou mais tabelas. Permite que seja montado uma consulta baseada em um cenário. OBS: A cláusula ORDER BY é proibida na instrução <select> da visão, sendo permitido ordenar o resultado de um select na visão.
 
-
 Exemplo 1: Criando uma view de clientes e notas.
 ~~~sql
 Create view vwvendas_Cliente 
